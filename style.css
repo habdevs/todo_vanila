@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    font-weight: inherit;
+    font-size: inherit;
+    margin: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+
+/*убираем декорейшн ссылок --------------------------------------------- */
+
+a {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color-paleblue: #b4bdcb;
+    --color-palepink: #C9A3A4;
+    --color-palegreen: #ACB5AC;
+    --color-pblue: #A7CEEF;
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-text: #000000;
+    --font1: 60px;
+    --font2: 40px;
+    --font-text: 30px;
+    --font-text-little: 18px;
+    --font-value: 24px;
+    --line-height-value: 48px;
+    --line-height1: 120px;
+    --line-height2: 80px;
+    --line-height: 40px;
+    --line-height-little: 36px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--color-text);
+    font-size: var(--font-text);
+    line-height: var(--line-height);
+    font-style: normal;
+    font-weight: 400;
+    background-color: var(--color-white);
+}
+
+.container {
+    display: flex;
+    margin: 100px auto;
+}
+
+.add-task {
+    display: flex;
+}
+
+input {
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+input[type=text] {
+    width: 600px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.todo {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn {
+    background-color: #89d8d3;
+    background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+    border: none;
+    z-index: 1;
+}
+
+
+/* CSS */
+
+button {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 20px;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(0deg, rgba(20, 167, 62, 1) 0%, rgba(102, 247, 113, 1) 100%);
+    border: none;
+    box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+    letter-spacing: 0.05em;
+    border-radius: 20em;
+    cursor: pointer;
+    user-select: none;
+    margin: 20px;
+}
+
+.button:hover {
+    box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+}
+
+.button:active {
+    box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+}
+
+.btn-success {}
+
+.btn-input {
+    width: 100px;
+}
+
+.list-group {}
+
+.todo-list-ul {}
+
+.list-group-item {}
